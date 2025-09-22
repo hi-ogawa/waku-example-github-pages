@@ -1,9 +1,15 @@
 import '../styles.css';
+import "@fontsource-variable/nunito";
+// @ts-ignore
+import fontUrl from "@fontsource-variable/nunito/files/nunito-latin-wght-normal.woff2";
 
 import type { ReactNode } from 'react';
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
+
+// @ts-ignore
+import favicon from '../favicon.png';
 
 type RootLayoutProps = { children: ReactNode };
 
@@ -11,15 +17,15 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const data = await getData();
 
   return (
-    <div className="font-['Nunito']">
+    <div className="font-['Nunito_Variable']">
       <meta name="description" content={data.description} />
-      <link rel="icon" type="image/png" href={data.icon} />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+      <link rel="icon" type="image/png" href={favicon} />
       <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        precedence="font"
+        rel="preload"
+        as="font"
+        href={fontUrl}
+        type="font/woff2"
+        crossOrigin=""
       />
       <Header />
       <main className="m-6 flex items-center *:min-h-64 *:min-w-64 lg:m-0 lg:min-h-svh lg:justify-center">
@@ -33,7 +39,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 const getData = async () => {
   const data = {
     description: 'An internet website!',
-    icon: '/images/favicon.png',
   };
 
   return data;

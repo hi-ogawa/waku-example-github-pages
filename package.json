@@ -15,6 +15,7 @@
     "waku": "https://pkg.pr.new/wakujs/waku@9f22ba7"
   },
   "devDependencies": {
+    "@fontsource-variable/nunito": "^5.2.7",
     "@tailwindcss/vite": "4.1.13",
     "@types/react": "19.1.12",
     "@types/react-dom": "19.1.9",
