@@ -1,15 +1,12 @@
 import '../styles.css';
 import "@fontsource-variable/nunito";
-// @ts-ignore
 import fontUrl from "@fontsource-variable/nunito/files/nunito-latin-wght-normal.woff2";
+import favicon from '../favicon.png?no-inline';
 
 import type { ReactNode } from 'react';
 
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
-
-// @ts-ignore
-import favicon from '../favicon.png';
 
 type RootLayoutProps = { children: ReactNode };
 
