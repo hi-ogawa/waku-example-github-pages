@@ -17,7 +17,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const data = await getData();
 
   return (
-    <div className="font-['Nunito']">
+    <div className="font-['Nunito_Variable']">
       <meta name="description" content={data.description} />
       <link rel="icon" type="image/png" href={favicon} />
       <link
