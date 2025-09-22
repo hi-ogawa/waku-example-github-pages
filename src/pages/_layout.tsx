@@ -8,6 +8,9 @@ import type { ReactNode } from 'react';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 
+// @ts-ignore
+import favicon from '../favicon.png';
+
 type RootLayoutProps = { children: ReactNode };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
@@ -16,7 +19,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   return (
     <div className="font-['Nunito']">
       <meta name="description" content={data.description} />
-      <link rel="icon" type="image/png" href={data.icon} />
+      <link rel="icon" type="image/png" href={favicon} />
       <link
         rel="preload"
         as="font"
@@ -36,7 +39,6 @@ export default async function RootLayout({ children }: RootLayoutProps) {
 const getData = async () => {
   const data = {
     description: 'An internet website!',
-    icon: '/images/favicon.png',
   };
 
   return data;
