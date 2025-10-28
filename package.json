@@ -9,19 +9,19 @@
     "start": "waku start"
   },
   "dependencies": {
-    "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "react-server-dom-webpack": "19.1.1",
-    "waku": "https://pkg.pr.new/wakujs/waku@9f22ba7"
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "react-server-dom-webpack": "19.2.0",
+    "waku": "0.27.0"
   },
   "devDependencies": {
     "@fontsource-variable/nunito": "^5.2.7",
-    "@tailwindcss/vite": "4.1.13",
-    "@types/react": "19.1.12",
-    "@types/react-dom": "19.1.9",
-    "tailwindcss": "4.1.13",
-    "typescript": "5.9.2",
-    "vite": "7.1.5"
+    "@tailwindcss/vite": "4.1.16",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "tailwindcss": "4.1.16",
+    "typescript": "5.9.3",
+    "vite": "7.1.12"
   },
   "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
 }
